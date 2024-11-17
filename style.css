@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.pinimg.com/736x/ec/e2/14/ece2149853184a2c0c4f4467102a99c9.jpg') no-repeat center center/cover;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.596);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-group .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.options a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #6a5acd;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:0.3s ease;
+}
+
+button:hover {
+    background: #836fff;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+    }
+}
